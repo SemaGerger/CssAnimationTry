@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="cizimAlani" width="400" height="500" style="border:1px solid #17925f;">
+    </canvas>
+    <canvas id="cizimAlani2" width="200" height="200" style="border:1px solid #17925f;">
+    </canvas>
+    <canvas id="cizimAlani3" width="400" height="500" style="border:1px solid #17925f;">
+    </canvas>
+
+    <script>
+      var cizimAlani = document.getElementById("cizimAlani");
+  
+      /* Kırmızı dikdörtgen */
+      var ctx = cizimAlani.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(20, 20, 100, 50);
+  
+      /* Gradient dikdörtgen 1 */
+      var grd = ctx.createLinearGradient(140, 20, 240, 70);
+      grd.addColorStop(0, "black");
+      grd.addColorStop(1, "white");
+      ctx.fillStyle = grd;
+      ctx.fillRect(140, 20, 100, 50);
+  
+      /* Gradient dikdörtgen 2 */
+      var grd2 = ctx.createLinearGradient(20, 90, 120, 90);
+      grd2.addColorStop(0, "black");
+      grd2.addColorStop("0.3", "magenta");
+      grd2.addColorStop("0.5", "blue");
+      grd2.addColorStop("0.6", "green");
+      grd2.addColorStop("0.8", "yellow");
+      grd2.addColorStop(1, "red");
+      ctx.fillStyle = grd2;
+      ctx.fillRect(20, 90, 100, 50);
+  
+      /* Renkli metin */
+      ctx.font = "30px Verdana";
+      var grd3 = ctx.createLinearGradient(140, 20, 240, 90);
+      grd3.addColorStop(0, "black");
+      grd3.addColorStop("0.3", "magenta");
+      grd3.addColorStop("0.6", "blue");
+      grd3.addColorStop("0.8", "green");
+      grd3.addColorStop(1, "red");
+      ctx.strokeStyle = grd3;
+      ctx.strokeText("Canvas!", 135, 125);
+  
+      /* www.yusufsezer.com.tr */
+      ctx.font = "15px arial";
+      ctx.fillStyle = "black";
+      ctx.fillText("deneme", cizimAlani.height / 2, cizimAlani.width / 200 + 20);
+
+    //   çizgi
+      var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+ctx.moveTo(0, 150);
+ctx.lineTo(370, 150);
+ctx.stroke();
+
+// çember
+var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+ctx.beginPath();
+ctx.arc(70, 220, 60, 0, 2 * Math.PI);
+ctx.stroke();
+
+// daire
+var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+ctx.beginPath();
+ctx.arc(200, 220, 60, 0, 2 * Math.PI);
+ctx.lineWidth = 5;
+ctx.fillStyle = "blue";
+ctx.fill();
+ctx.stroke();
+
+// Dikdörtgen çizmek
+var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(10, 290, 140, 40);
+
+// Yazı yazmak
+var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+ctx.font = "20px Arial";
+ctx.fillText("deneme yazı", 160, 310)
+
+// Kenarlıklı yazı yazmak
+var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("deneme yazı", 280, 310);
+
+
+// Gradient oluşturmak ve uygulamak
+var cizimAlani = document.getElementById("cizimAlani");
+var ctx = cizimAlani.getContext("2d");
+// Gradient oluşturur
+var grd = ctx.createLinearGradient(10, 50, 200, 0);
+grd.addColorStop(0, "#000");
+grd.addColorStop(1, "#FFF");
+// Gradient uygular
+ctx.fillStyle = grd;
+ctx.fillRect(10, 350, 200, 140);
+
+
+// Dairesel gradient oluşturmak ve uygulamak
+var cizimAlani2 = document.getElementById("cizimAlani2");
+var ctx = cizimAlani2.getContext("2d");
+
+// Dairesel Gradient oluşturur
+var grd = ctx.createRadialGradient(110, 80, 50, 110, 80, 80);
+grd.addColorStop(0, "#FF0000");
+grd.addColorStop(1, "#FFFFFF");
+
+// Dairesel Gradient uygular
+ctx.fillStyle = grd;
+ctx.fillRect(5, 5, 550, 240);
+
+
+
+
+// canvas ölçüsü
+var canvas = document.getElementById("cizimAlani3");
+var context = canvas.getContext('2d');
+
+// source for this code: https://riptutorial.com/html5-canvas/example/11659/detecting-mouse-position-on-the-canvas
+
+canvas.addEventListener("mousemove", function(e) { 
+    var cRect = canvas.getBoundingClientRect();
+    var canvasX = Math.round(e.clientX - cRect.left);
+    var canvasY = Math.round(e.clientY - cRect.top);
+    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillText("X: "+canvasX+", Y: "+canvasY, 10, 20);
+});
+
+
+// yıldız
+var canvas = document.getElementById("cizimAlani3");
+var context = canvas.getContext('2d');
+
+context.fillStyle = "orange";
+context.beginPath();
+context.moveTo(108, 0.0);
+context.lineTo(141, 70);
+context.lineTo(218, 78.3);
+context.lineTo(162, 131);
+context.lineTo(175, 205);
+context.lineTo(108, 170);
+context.lineTo(41.2, 205);
+context.lineTo(55, 131);
+context.lineTo(1, 78);
+context.lineTo(75, 68);
+context.lineTo(108, 0);
+context.closePath();
+context.fill();
+
+
+
+
+</script>
+</body>
+</html>

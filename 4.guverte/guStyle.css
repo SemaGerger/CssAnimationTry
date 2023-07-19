@@ -1,0 +1,45 @@
+.shipWheel-img{
+    width: 400px;
+    height:400px;
+    animation-name: shipWheeln;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: relative;
+    left: 560px;
+    top: -400px;
+   
+ 
+
+}
+@keyframes shipWheeln {
+   
+    50%  {transform: rotate(360deg)}
+    50%  {transform: rotate(-360deg)}
+   
+    
+}  
+
+.guverte-img{
+    width: 1500px;
+    height: 700px;
+    animation-name: guverten;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    bottom: 1000px;
+    top: 500px;
+  
+   
+    left: 0px;
+    top: 0px;
+    bottom: 10px;
+}
+@keyframes guverten {
+   
+    50%  {transform: rotate(5deg)}
+    50%  {transform: rotate(-10deg)}
+   
+    
+}  
+
+

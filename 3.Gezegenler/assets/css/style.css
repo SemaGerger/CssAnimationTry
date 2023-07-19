@@ -1,0 +1,249 @@
+body{
+    background: url(../../assets/images/space-bacground.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.gezegenler{
+    width: 100%;
+    justify-content: center;
+}
+
+.pluton{
+    width: 1200px;
+    height: 1200px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 50px;
+    top: 50px;
+    animation: donme 20s linear infinite;
+}
+.pluton-image{ 
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 165px;
+    top: 165px;
+    animation: donme 8s linear infinite;
+}
+.uranus{
+    width: 1100px;
+    height: 1100px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 100px;
+    top: 100px;
+    animation: donme 18s linear infinite;
+}
+
+.uranus-image{ 
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 140px;
+    top: 140px;
+    animation: donme 8s linear infinite;
+}
+.neptun{
+    width: 1000px;
+    height: 1000px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 150px;
+    top: 150px;
+    animation: donme 16s linear infinite;
+}
+
+.neptun-image{ 
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 130px;
+    top: 130px;
+    animation: donme 8s linear infinite;
+}
+
+.saturn{
+    width: 900px;
+    height: 900px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 200px;
+    top: 200px;
+    animation: donme 14s linear infinite;
+}
+
+.saturn-image{ 
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: 110px;
+    top: 110px;
+    animation: donme 8s linear infinite;
+}
+.jupiter{
+    width: 750px;
+    height: 750px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 270px;
+    top: 270px;
+    animation: donme 12s linear infinite;
+}
+
+.jupiter-image{ 
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+    animation: donme 8s linear infinite;
+}
+.mars{
+    width: 600px;
+    height: 600px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 340px;
+    top:340px;
+    animation: donme 10s linear infinite;
+}
+
+.mars-image{ 
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 70px;
+    top: 70px;
+    animation: donme 8s linear infinite;
+}
+.dunya{
+    width: 450px;
+    height: 450px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 415px;
+    top:415px;
+    animation: donme 8s linear infinite;
+}
+
+.dunya-image{ 
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 40px;
+    top: 40px;
+     animation: donme 8s linear infinite;
+}
+.ay{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    border-radius: 50%;
+    left:25px;
+    top:25px;
+    animation: tersdonme 2s linear infinite;
+}
+.ay-image{ 
+    width: 20px;
+    height: 20px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+     animation: tersdonme 8s linear infinite;
+}
+.venus{
+    width: 300px;
+    height: 300px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 490px;
+    top:490px;
+    animation: donme 6s linear infinite;
+}
+
+.venus-image{ 
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left:30px;
+    top: 30px;
+    animation: donme 8s linear infinite;
+}
+.merkur{
+    width: 200px;
+    height: 200px;
+    border: 2px dashed white;
+    position: absolute;
+    border-radius: 50%;
+    left: 540px;
+    top:540px;
+    animation: donme 4s linear infinite;
+}
+
+.merkur-image{ 
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left:15px;
+    top: 15px;
+    animation: donme 8s linear infinite;
+}
+
+.gunes-image{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    left: 590px;
+    top:590px;
+    animation: donme 20s linear infinite;
+}
+.meteor{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: -50px;
+    top:-50px;
+    animation: meteorAnimation 10s linear infinite;
+}
+.meteor2{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -80px;
+    top:850px;
+    transform: rotate(290deg);
+    animation: meteorAnimation2 10s linear infinite 5s;
+}
+@keyframes donme{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes tersdonme{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes meteorAnimation{
+    100%{
+       left: 1400px;
+       top: 1000px;
+    }
+}
+@keyframes meteorAnimation2{
+    100%{
+       left: 1400px;
+       top: -50px;
+    }
+}
+
+
+

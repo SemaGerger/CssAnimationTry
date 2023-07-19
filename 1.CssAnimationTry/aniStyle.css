@@ -1,0 +1,327 @@
+.kutu1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: renkDegistir;
+    animation-duration: 5s;
+}
+@keyframes renkDegistir{
+    from{
+        background-color: red;
+    }
+    to{
+        background-color: green;
+    }
+}
+
+.kutu2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: degisim1;
+    animation-duration: 15s;
+}
+
+@keyframes degisim1{
+   0%{
+    background-color: #23a387;
+   }
+   100%{
+    background-color: gold;
+   }
+}
+.kutu3{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 136);
+    animation-name: degisim2;
+    animation-duration: 15s;
+}
+
+@keyframes degisim2{
+   0%{
+    background-color: rgb(255, 0, 136);
+   }
+   50%{
+    background-color: rgb(0, 213, 255);
+   }
+   100%{
+    background-color: rgb(255, 140, 0);
+   }
+}
+.kutu4{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 255, 4);
+    animation-name: degisim3;
+    animation-duration: 5s;
+    animation-iteration-count: 10;
+}
+
+@keyframes degisim3{
+   0%{
+    background-color: rgb(0, 255, 4);
+   }
+   33%{
+    background-color: rgb(0, 8, 255);
+   }
+   66%{
+    background-color: rgb(255, 0, 0);
+   }
+   100%{
+    background-color: rgb(0, 255, 4);
+   }
+}
+
+.sekil{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: sekilAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes sekilAnimation{
+    0%{
+        background-color: red;
+        border-radius: 0px;
+    }
+    25%{
+        background-color: blue;
+        border-radius: 15px;
+    }
+    50%{
+        background-color: rgb(255, 0, 217);
+        border-radius: 50%;
+    }
+    75%{
+        background-color: blue;
+        border-radius: 15px;
+    }
+    100%{
+        background-color: red;
+        border-radius: 0px;
+    }
+}
+.ahmet{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 5px red double;
+    border-radius: 50%;
+    animation-name: ahmetAnimation;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+}
+@keyframes ahmetAnimation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.sema{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border: 5px rgb(0, 0, 0) dashed;
+    border-radius: 50%;
+    animation-name: semaAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 20px;
+    font-weight: bold;
+}
+@keyframes semaAnimation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.huseyin{
+    width: 200px;
+    height: 110px;
+    padding-top: 90px;
+    text-align: center;
+    border: 5px rgb(0, 0, 0) dashed;
+    border-radius: 50%;
+    animation-name: huseyinAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 20px;
+    font-weight: bold;
+}
+@keyframes huseyinAnimation{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.ozlem{
+    width: 100px;
+    height: 65px;
+    padding-top: 35px;
+    text-align: center;
+    border: 5px rgb(0, 0, 0) dashed;
+    border-radius: 50%;
+    animation-name: ozlemAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+}
+@keyframes ozlemAnimation{
+    0%{
+        transform: rotate(0deg);
+        left: 0;
+    }
+    50%{
+        transform: rotate(360deg);
+        left: 300px;
+    }
+    100%{
+        transform: rotate(0deg);
+        left: 0;
+    }
+}
+.atakan{
+    width: 100px;
+    height: 65px;
+    padding-top: 35px;
+    text-align: center;
+    border: 5px rgb(0, 0, 0) dashed;
+    border-radius: 50%;
+    animation-name: atakanAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background-color: red;
+    color: white;
+}
+@keyframes atakanAnimation{
+    0%{
+        transform: rotate(0deg);
+        left: 0;
+        top:0;
+    }
+    25%{
+        transform: rotate(90deg);
+        left: 300px;
+       top: 0;
+    }
+    50%{
+        transform: rotate(-180deg);
+        left: 300px;
+        top: 300px;
+    }
+    75%{
+        transform: rotate(-270deg);
+        left: 0;
+        top: 300px;
+    }
+    100%{
+        transform: rotate(-360deg);
+        left: 0;
+        top: 0;
+    }
+}
+
+.ucgen{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 5px rgb(0, 0, 0) dashed;
+    border-radius: 50%;
+    animation-name: ucgenAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    background-color: red;
+    color: white;
+}
+@keyframes ucgenAnimation{
+    0%{
+        transform: rotate(0deg);
+        left: 0;
+        top:0;
+    }
+    33%{
+        transform: rotate(120deg);
+        left: 300px;
+        top:300px;
+    }
+    66%{
+        transform: rotate(-240deg);
+        left: 0;
+        top: 300px;
+    }
+    100%{
+        transform: rotate(-360deg);
+        left: 0;
+        top: 0;
+    }
+}
+
+.area{
+    width: 100%;
+    height: 500px;
+    border-bottom: 10px solid gray;
+}
+.area .ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    animation: ballAnimation 2s 5 linear,lineerAnimation 5s linear 6s;
+}
+@keyframes ballAnimation{
+    0%{
+        top:420px;
+        transform: rotate(0deg);
+        height: 80px;
+    }
+    5%{
+        top:380px ;
+        height:100px;
+    }
+    50%{
+        top:0px ;
+        transform: rotate(180deg);
+    }
+    95%{
+        height: 100px;
+    }
+    100%{
+        top:420px;
+        transform: rotate(360deg);
+        height: 80px;
+    }
+}
+@keyframes lineerAnimation{
+    0%{
+        height: 100px;
+        transform: rotate(0deg);
+        top:420px;
+        left: 0;
+    }
+
+    50%{
+        top:420px;
+        left: 500px;
+    }
+    100%{
+        top:420px;
+        left: 1000px;
+        transform: rotate(360deg);
+    }
+}
